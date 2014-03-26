@@ -1,0 +1,28 @@
+Twitter Pings
+=============
+
+Data project by Joel Willers
+----------------------------
+
+**Overview**
+Display locations of tweets based on search parameters on a map of the world
+
+**Project Description**
+Allow a user to enter different search terms, each displayed as a different color,
+and every time a Tweet uses the search term, the location is displayed on a map of 
+the world as a dot of that color. User can enter several search terms and control 
+the fade rate of the dot. 
+
+**Possible uses**
+This tool will be interesting to use, as a person could find out where certain topics
+are being discussed. This will also be a good jumping off point for other location-based 
+displays besides just showing Twitter search terms. Other data could be plugged into 
+the data stream, such as new user accounts for certain sites, when people log into a 
+site, etc. 
+
+**Data collection**
+Data will be collected using the Twitter API. Most Tweets do not seem to have coordinates, 
+so reported location can be run through a converter to get latitude and longitude 
+coordinates. If no locative information is given, the dot will not be displayed (or, 
+alternatively, it could be shown in a separate area marked "?"). Once the coordinates are 
+collected, they will be displayed on a map of the world using Shiny.
