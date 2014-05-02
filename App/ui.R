@@ -15,11 +15,13 @@ shinyUI(fluidPage(
       
       submitButton("updateData","Search"), 
       
-      helpText("This updates every 10 seconds, so please be patient.")
+      helpText("This updates every 10 seconds, so please be patient."),
+      
+      checkboxInput("addData","Accumulate Data", value=TRUE)
       
     ),
-        
-# Show a map of the World
+    
+    # Show a map of the World
     mainPanel(
       plotOutput("worldMap"),
       tableOutput("view")
